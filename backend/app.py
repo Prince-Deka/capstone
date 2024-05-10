@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 app = Flask(__name__, static_folder='../frontend/build', static_url_path='/')
-model = load_model('path_to_your_model.h5')
+model = load_model('./face_model.h5')
 
 def prepare_image(image):
     """ Preprocess the image to fit model's input requirements. """
